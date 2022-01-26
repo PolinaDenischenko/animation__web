@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+.avatar{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(243, 216, 181);
+}
+
+@keyframes title__run{
+   0%{
+       transform: none;    
+   }
+   100%{
+       transform: translateX(100px);
+   }  
+}
+
+.avatar__img{
+    background-image: url(img/risunki-tigra-27.jpg);
+    background-repeat: no-repeat;
+    height: 20vh;
+    width: 15vh;
+    background-position: left center;
+    border-radius: 100%;
+}
+
+.avatar__img:hover{
+    animation: title__run 2s infinite alternate;
+}
+
+.block__one{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(152, 197, 218);
+}
+
+@keyframes inner__run{
+    0%{
+        transform: none;    
+    }
+    100%{
+        transform: translateX(100px);
+    }  
+ }
+
+.inner__cube{
+    width: 200px;
+    height: 150px;
+    background-color: tomato;
+    animation: inner__run 2s infinite alternate-reverse;
+
+}
+
+.block__two{
+    width: 500px;
+    height: 250px;
+    background-color: rgb(104, 233, 216);
+}
+
+@keyframes central__run{
+    0%{
+        transform: none;    
+    }
+    100%{
+        transform: translateX(100px);
+    }  
+ }
+
+.central__cube{
+    width: 150px;
+    height: 100px;
+    background-color: rgb(43, 89, 187);
+    animation: central__run 5s infinite alternate-reverse;
+
+}
